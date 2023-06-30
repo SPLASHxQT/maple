@@ -36,7 +36,6 @@
       padding: 20px 20px;
       text-decoration: none;
     }
-   
     ul.menu li a:hover {
         background: linear-gradient(to bottom, #ffff00, #5f4d03);
         color: black;
@@ -45,11 +44,6 @@
         background: linear-gradient(to bottom, #dbc609, #5f4d06);
         color: black;
         border-radius:15px ;
-    }
-        
-    ul.menu li.active a {
-      background: linear-gradient(to bottom, #ffff00, #5f4d03);
-      color: black;
     }
     h1 {
         text-align: center;
@@ -114,8 +108,8 @@
     <h1><span class="text"> MAPLE LEAF REAL ESTATE ADVISORY</span></h1>
     </div>
     <script>
-     function nav(){
-        window.location.href='basicpage.html';
+      function nav(){
+        window.location.href='homepage.html';
       }
       function navp(){
         window.location.href='portfolio.html';
@@ -130,34 +124,14 @@
         window.location.href='testimonials.html';
       }
     </script>
-     <script>
-        function setActive() {
-          var links = document.querySelectorAll('ul.menu li');
-          
-          for (var i = 0; i < links.length; i++) {
-            links[i].addEventListener('click', function() {
-              var current = document.getElementsByClassName('active');
-              
-              if (current.length > 0) {
-                current[0].classList.remove('active');
-              }
-              
-              this.classList.add('active');
-            });
-          }
-        }
-        
-        setActive();
-      </script>
   <ul class="menu">
-    <li class="active"><a href="#" onclick="nav()">Home</a>
+    <li><a href="#" onclick="nav()">Home</a>
     </li>
     <li class="port"><b href="#" onclick="navp()">Portfolio</b></li>
-        <li ><a href="#" onclick="navabt()">About Us</a></li>
-        <li ><a href="#" onclick="navservices()">Our Services</a></li>
-        <li ><a href="#" onclick="navtest()">Testimonials</a></li>
-        <li ><a href="#">Gallery</a></li>
+    <li class="aboutus"><a href="#" onclick="navabt()">About Us</a></li>
+    <li class="ourservices"><a href="#" onclick="navservices()">Our Services</a></li>
+    <li class="testimonials"><a href="#" onclick="navtest()">Testimonials</a></li>
+    <li class="Gallery"><a href="#">Gallery</a></li>
   </ul>
-<h2>Agent 2</h2>
 </body>
 </html>

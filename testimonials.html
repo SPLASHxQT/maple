@@ -36,7 +36,6 @@
       padding: 20px 20px;
       text-decoration: none;
     }
-   
     ul.menu li a:hover {
         background: linear-gradient(to bottom, #ffff00, #5f4d03);
         color: black;
@@ -46,7 +45,6 @@
         color: black;
         border-radius:15px ;
     }
-        
     ul.menu li.active a {
       background: linear-gradient(to bottom, #ffff00, #5f4d03);
       color: black;
@@ -114,23 +112,6 @@
     <h1><span class="text"> MAPLE LEAF REAL ESTATE ADVISORY</span></h1>
     </div>
     <script>
-     function nav(){
-        window.location.href='basicpage.html';
-      }
-      function navp(){
-        window.location.href='portfolio.html';
-      }
-      function navabt(){
-        window.location.href='aboutus.html';
-      }
-      function navservices(){
-        window.location.href='ourservices.html';
-      }
-      function navtest(){
-        window.location.href='testimonials.html';
-      }
-    </script>
-     <script>
         function setActive() {
           var links = document.querySelectorAll('ul.menu li');
           
@@ -149,15 +130,31 @@
         
         setActive();
       </script>
+    <script>
+      function nav(){
+        window.location.href='homepage.html';
+      }
+     function navp(){
+        window.location.href='portfolio.html';
+      }
+      function navabt(){
+        window.location.href='aboutus.html';
+      }
+      function navservices(){
+        window.location.href='ourservices.html';
+      }
+      function navtest(){
+        window.location.href='basicpage.html';
+      }
+    </script>
   <ul class="menu">
-    <li class="active"><a href="#" onclick="nav()">Home</a>
+    <li><a href="#" onclick="nav()">Home</a>
     </li>
     <li class="port"><b href="#" onclick="navp()">Portfolio</b></li>
         <li ><a href="#" onclick="navabt()">About Us</a></li>
         <li ><a href="#" onclick="navservices()">Our Services</a></li>
-        <li ><a href="#" onclick="navtest()">Testimonials</a></li>
+        <li class="active"><a href="#" onclick="navtest()">Testimonials</a></li>
         <li ><a href="#">Gallery</a></li>
   </ul>
-<h2>Agent 2</h2>
 </body>
 </html>
